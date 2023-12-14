@@ -1,12 +1,19 @@
 <ion-view view-title="Login">
-  <ion-content class="login_content text-center padding" ng-class="{'rtl':Language.isRtl()}"
-    dir="{{(Language.isRtl())?'rtl':'ltr'}}" scroll="true">
+  <ion-content
+    class="login_content text-center padding"
+    ng-class="{'rtl':Language.isRtl()}"
+    dir="{{(Language.isRtl())?'rtl':'ltr'}}"
+    scroll="true"
+  >
     <div class="logo animated rubberBand">
-      <img src="/Alawneh_pay_logo_final.png" style="width: 300px;" />
+      <img src="/Alawneh_pay_logo_final.png" style="width: 300px" />
     </div>
-    <div id="idwise-mount"></div>
+    <div id="idwise-mount" data-tap-disabled="true"></div>
 
-    <a ng-click="enter.testCode()" class="card button button-block main-btn sec-main-bg-color"
-    >Check Camera Permission State</a>
-    </ion-content>
+    <a
+      ng-click="enter.testCode()"
+      class="card button button-block main-btn sec-main-bg-color"
+      >Check Camera Permission State</a
+    >
+  </ion-content>
 </ion-view>
